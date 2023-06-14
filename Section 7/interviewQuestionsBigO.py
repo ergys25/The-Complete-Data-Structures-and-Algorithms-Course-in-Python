@@ -67,11 +67,4 @@ def reverse(array):
 reverse(arrayA)
 
 
-name = {
-    'car': 'opel',
-    'milage': 120
-}
-
-
-print(name.pop('car'))
 
