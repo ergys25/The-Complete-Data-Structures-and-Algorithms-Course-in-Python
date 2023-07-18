@@ -1,3 +1,7 @@
+"""
+16
+"""
+
 def sum_product(t):
     sum_result = 0
     product_result = 1
