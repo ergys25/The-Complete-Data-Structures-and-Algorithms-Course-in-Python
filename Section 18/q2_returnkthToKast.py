@@ -1,3 +1,7 @@
+"""
+q2
+"""
+
 from LinkedList import LinkedList
 
 
