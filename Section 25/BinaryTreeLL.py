@@ -12,6 +12,7 @@ rightChild = TreeNode("Cold")
 newBT.leftChild = leftChild
 newBT.rightChild = rightChild
 
+
 def preOrderTraversal(rootNode):
     if not rootNode:
         return
@@ -20,4 +21,23 @@ def preOrderTraversal(rootNode):
     preOrderTraversal(rootNode.rightChild)
 
 
+
+def inOrderTraversal(rootNode):
+    if not rootNode:
+        return
+    inOrderTraversal(rootNode.leftChild)
+    print(rootNode.data)
+    inOrderTraversal(rootNode.rightChild)
+
+
+
+
+
+
+
+
+
+
+
 preOrderTraversal(newBT)
+inOrderTraversal(newBT)
