@@ -92,6 +92,20 @@ def insert(rootNode, newNode):
                 root.rightChild = newNode
                 return "Success"
 
+def getDeepestNode(rootNode):
+    if not rootNode:
+        return
+    else:
+        customQueue = []    
+        customQueue.append(rootNode)
+        while not(len(customQueue)==0):
+            root = customQueue.pop()
+            if(root.leftChild is not None):
+                customQueue.append(root.leftChild)
+            if(root.rightChild is not None):
+                customQueue.append(root.rightChild)
+        depestNode = rootNode
+        return depestNode
 
 
 
