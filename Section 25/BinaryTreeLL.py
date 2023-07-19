@@ -56,6 +56,24 @@ def levelOrderTraversal(rootNode):
             
             
 
+def search(rootNode, nodevalue):
+    if not rootNode:
+        return
+    else:
+        customQueue = []
+        customQueue.append(rootNode)
+        while not(len(customQueue)==0):
+            root = customQueue.pop()
+            if root.data == nodevalue:
+                return "success"
+            if(root.leftChild is not None):
+                customQueue.append(root.leftChild)
+            if(root.rightChild is not None):
+                customQueue.append(root.rightChild)
+        return "Not Found"
+            
+
+
 
 
 
@@ -69,3 +87,5 @@ preOrderTraversal(newBT)
 inOrderTraversal(newBT)
 postOrderTraversal(newBT)
 levelOrderTraversal(newBT)
+print(search(newBT, "Tea"))
+print(search(newBT, "Cola"))
