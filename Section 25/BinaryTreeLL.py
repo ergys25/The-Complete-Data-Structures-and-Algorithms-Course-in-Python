@@ -73,6 +73,24 @@ def search(rootNode, nodevalue):
         return "Not Found"
             
 
+def insert(rootNode, newNode):
+    if not rootNode:
+        rootNode = newNode
+    else:
+        customQueue = []
+        customQueue.append(rootNode)
+        while not(len(customQueue) == 0):
+            root = customQueue.pop()
+            if root.leftChild is not None:
+                customQueue.append(root.leftChild)
+            else:
+                root.leftChild = newNode
+                return "Success"
+            if root.rightChild is not None:
+                customQueue.append(root.rightChild)
+            else: 
+                root.rightChild = newNode
+                return "Success"
 
 
 
@@ -89,3 +107,6 @@ postOrderTraversal(newBT)
 levelOrderTraversal(newBT)
 print(search(newBT, "Tea"))
 print(search(newBT, "Cola"))
+newNode = TreeNode("Cola")
+insert(newBT, newNode)
+levelOrderTraversal(newNode)
