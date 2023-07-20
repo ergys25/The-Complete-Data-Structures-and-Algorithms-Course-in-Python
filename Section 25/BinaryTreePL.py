@@ -57,7 +57,9 @@ class BinaryTree:
                 return
 
 
-
+    def Delete(self):
+        self.customList = None
+        return
 
 
 
