@@ -46,7 +46,15 @@ class BinaryTree:
         for i in range (index, self.lastUsedIndex + 1):
             print(self.customList[i])
 
-
+    def deleteNode(self, value):
+        if self.lastUsedIndex == 0:
+            return
+        for i in range(1, self.lastUsedIndex + 1):
+            if self.customList[i] == value:
+                self.customList[i] = self.customList[self.lastUsedIndex]
+                self.customList[self.lastUsedIndex] = None
+                self. lastUsedIndex -= 1
+                return
 
 
 
