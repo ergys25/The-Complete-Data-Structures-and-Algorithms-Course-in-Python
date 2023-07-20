@@ -12,6 +12,25 @@ class BinaryTree:
         self.customList[self.lastUsedIndex + 1] = value
         self.lastUsedIndex += 1
         return "The value has been succesfully inserted"
+    
+    def Search(self, nodeValue):
+        for i in range(len(self.customList)):
+            if self.customList[i] == nodeValue:
+                return "Success"
+        return("Not Found")
+    
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 newBt = BinaryTree(8)
@@ -19,3 +38,4 @@ print(newBt.insertNode("Drinks"))
 print(newBt.insertNode("hot"))
 print(newBt.insertNode("cold"))
 print(newBt.customList)
+print(newBt.Search("hot"))
