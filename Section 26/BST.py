@@ -58,6 +58,23 @@ def levelOrdertraversall(rootNode):
         if root.rightChild is not None:
             stack.append(root.rightChild)
 
+def search(rootNode, nodeValue):
+    if rootNode.data == nodeValue:
+        print("The Valuse is found")
+    elif nodeValue < rootNode.data:
+        if rootNode.leftChild.data == nodeValue:
+            print("The value is found")
+        else:
+            search(rootNode.leftChild, nodeValue)
+    else:
+        if rootNode.rightChild.data == nodeValue:
+            print("The value is found")
+        else:
+            search(rootNode.rightChild, nodeValue)
+        
+    
+    
+
 
 newBST = BSTNode(None)
 insert(newBST, 70)
@@ -73,3 +90,5 @@ insert(newBST, 40)
 preOrderTraversall(newBST)
 inOrderTraversall(newBST)
 postOrderTraversall(newBST)
+inOrderTraversall(newBST)
+search(newBST, 40)
