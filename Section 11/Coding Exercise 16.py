@@ -1,5 +1,5 @@
 """
-16
+1
 """
 
 def sum_product(t):
