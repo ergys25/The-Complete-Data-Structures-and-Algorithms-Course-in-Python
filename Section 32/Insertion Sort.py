@@ -10,5 +10,5 @@ def insertionSort(custom_list):
 
 
 
-cl = [2,3,5,4,1,7,6,9,8]
+cl = [2,3,5,4,1,7,6,9,8,10]
 insertionSort(cl)
