@@ -1,3 +1,4 @@
+#CE15
 def check_same_frequency(list1, list2):
     def count_elements(lst):
         counter = {}
