@@ -1,5 +1,5 @@
 """
-20
+200
 """
 
 def get_diagonal(input_tuple):
