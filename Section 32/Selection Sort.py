@@ -11,3 +11,6 @@ def selectionSort(customList):
 cList = [2,1,7,6,5,3,4,9,8,10]
 
 selectionSort(cList)
+
+
+
