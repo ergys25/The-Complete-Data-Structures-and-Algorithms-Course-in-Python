@@ -10,7 +10,7 @@ def bubbleSort(customList):
     print( customList )
 
 
-def selectionSort(customList):
+def selectionSort( customList):
     for i in range(len(customList)):
         min_index = i
         for j in range(i+1, len(customList)):
