@@ -85,7 +85,7 @@ def merge( customList, l, m, r ):
         j += 1
         k += 1
 
-def mergeSort( customList, l, r):
+def mergeSort( customList, l, r ):
     if l < r:
         m = (l+(r-1))//2
         mergeSort(customList, l, m)
