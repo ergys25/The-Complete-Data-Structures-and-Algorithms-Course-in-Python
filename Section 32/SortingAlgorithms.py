@@ -45,7 +45,7 @@ def bucketSort( customList ):
         arr[i] = insertionSort(arr[i])
     
     k = 0
-    for i in range( numberofBuckets):
+    for i in range( numberofBuckets ):
         for j in range(len(arr[i])):
             customList[k] = arr[i][j]
             k += 1
