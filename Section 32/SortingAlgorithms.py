@@ -30,7 +30,7 @@ def insertionSort( customList ):
     return customList
 
 
-def bucketSort( customList):
+def bucketSort( customList ):
     numberofBuckets = round(math.sqrt(len(customList)))
     maxValue = max(customList)
     arr = []
