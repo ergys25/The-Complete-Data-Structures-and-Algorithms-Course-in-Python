@@ -35,7 +35,7 @@ def bucketSort( customList ):
     maxValue = max(customList)
     arr = []
 
-    for i in range( numberofBuckets):
+    for i in range( numberofBuckets ):
         arr.append([])
     for j in customList:
         index_b = math.ceil(j*numberofBuckets/maxValue)
