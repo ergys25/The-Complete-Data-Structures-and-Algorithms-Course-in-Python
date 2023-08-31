@@ -41,7 +41,7 @@ def bucketSort( customList ):
         index_b = math.ceil(j*numberofBuckets/maxValue)
         arr[index_b-1].append(j)
     
-    for i in range(numberofBuckets):
+    for i in range( numberofBuckets):
         arr[i] = insertionSort(arr[i])
     
     k = 0
