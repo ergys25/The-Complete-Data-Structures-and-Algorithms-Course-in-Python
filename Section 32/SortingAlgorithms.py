@@ -82,8 +82,8 @@ def merge( customList, l, m, r ):
     
     while j < n2:
         customList[k] = R[j]
-        j+= 1
-        k+= 1
+        j += 1
+        k += 1
 
 def mergeSort( customList, l, r ):
     if l < r:
