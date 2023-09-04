@@ -9,16 +9,14 @@ class Graph:
         self.gdict[vertex].append(edge)
 
 
-customDict = {
-        'a': ['b', 'c'],
-        'b': ['a', 'b', 'e'],
-        'c': ['a', 'e'],
-        'd': ['b', 'e', 'f'],
-        'e': ['d', 'f', 'c'],
-        'f': ['d', 'e']
-}
+
 
 
 graph = Graph(customDict)
 
 print(graph.gdict)
+
+def test_cases():
+
+
+print( test_cases())
