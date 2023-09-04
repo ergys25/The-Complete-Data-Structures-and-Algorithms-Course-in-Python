@@ -137,7 +137,7 @@ def heapSort(customList):
 
 
 
-cList = []
+cList = [] 
 heapSort(cList)
 print(cList)
 
