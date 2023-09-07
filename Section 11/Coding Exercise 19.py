@@ -1,5 +1,5 @@
 """
-19 
+1 9 
 """
 
 def concatenate_strings(input_tuple):
