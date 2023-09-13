@@ -1,4 +1,4 @@
-#13
+#1 3
 class Node:
     def __init__(self, value) -> None:
         self.value = value
@@ -8,7 +8,7 @@ class Node:
 
 class LinkedList:
     def __init__(self) -> None:
-        self.head = None
+        self.head =  None
         self.tail = None
         self.length = 0
     
