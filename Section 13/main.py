@@ -34,7 +34,7 @@ class LinkedList:
         self.length += 1
 
 
-    def add_head(self, value):
+    def add_head( self, value ):
         new_node = Node(value)
         if self.head is None:
             self.head = new_node
