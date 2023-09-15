@@ -22,7 +22,7 @@ class LinkedList:
             temp = temp.next
         return result
 
-    def append(self, value):
+    def append( self, value ):
         new_node = Node( value )
         if self.head is None:
             self.head = new_node
