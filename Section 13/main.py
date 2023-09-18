@@ -67,7 +67,7 @@ class LinkedList:
             current = current.next
         return False
 
-    def get(self , idx):
+    def get( self , idx :
         if idx < 0 or idx >= self.length:
             return None
         current = self.head
