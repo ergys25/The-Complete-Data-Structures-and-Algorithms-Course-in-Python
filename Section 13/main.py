@@ -59,7 +59,7 @@ class LinkedList:
             print(current.value)
             current = current.next
     
-    def search(self, target):
+    def search( self, target ):
         current = self.head
         while current:
             if current.value == target:
