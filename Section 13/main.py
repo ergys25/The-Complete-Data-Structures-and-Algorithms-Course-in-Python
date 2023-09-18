@@ -95,7 +95,7 @@ class LinkedList:
         return pop_node
 
 
-    def pop(self):
+    def pop( self ):
         pop_node = self.tail
         if self.length == 1:
             self.head = self.tail = None
