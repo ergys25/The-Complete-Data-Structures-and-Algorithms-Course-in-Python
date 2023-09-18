@@ -67,7 +67,7 @@ class LinkedList:
             current = current.next
         return False
 
-    def get( self , idx :
+    def get( self , idx):
         if idx < 0 or idx >= self.length:
             return None
         current = self.head
@@ -83,7 +83,7 @@ class LinkedList:
             current= current.next
         current.value = value
 
-    def pop_first(self):
+    def pop_first( self ):
         pop_node = self.head
         if self.length == 1:
             self.head = None
