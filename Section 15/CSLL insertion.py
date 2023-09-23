@@ -8,7 +8,7 @@ class Node:
         self.next = None
  
 class CircularSinglyLinkedList:
-    def __init__(self):
+    def __init__( self ):
         self.head = None
         self.tail = None
  
