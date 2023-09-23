@@ -21,7 +21,7 @@ class CircularSinglyLinkedList:
             node = node.next
 
 
-    def createCSLL(self, value):
+    def createCSLL( self, value ):
         node = Node(value=value)
         node.next = node
         node.head = node
