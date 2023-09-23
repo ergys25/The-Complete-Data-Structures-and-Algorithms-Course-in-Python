@@ -31,7 +31,7 @@ class CircularSinglyLinkedList:
         if self.head is None:
             return "The head reference is None"
         else:
-            new_node = Node(value)
+            new_node = Node( value )
             if location == 0:
                 new_node.next = self.head
                 self.head = new_node
