@@ -1,4 +1,4 @@
-def merge(customList, l, m, r):
+def merge( customList, l, m, r ):
     n1 = m - l + 1
     n2 = r - m
 
