@@ -28,7 +28,7 @@ def merge( customList, l, m, r ):
         k += 1
     
     while j < n2:
-        customList[k] = R[j]
+        customList[k] =  R[j]
         j += 1
         k += 1
 
